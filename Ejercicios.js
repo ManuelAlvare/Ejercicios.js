@@ -1,35 +1,67 @@
-    // Crea una lista de números pares del 2 al 20 utilizando un bucle while.
-    var numeros =[];
-    var i=0;
-    while(i<=20){
-numeros.push(i);
-i= i + 2;
+// Crea una lista de números pares del 2 al 20 utilizando un bucle while.
+numeros_pares=[];
+var i=0;
+while (i<=20) {
+    if (i%2==0) {
+        numeros_pares.push(i);
     }
-console.log("Listas de numeros"+numeros)
+    i=i+1;
+}
+// Crea una lista de números impares del 1 al 19 utilizando un bucle for.
+numeros_impares=[];
+for (let j=0; j<=19; j++) {
+    if (j%2==1) {
+        numeros_impares.push(j);
+    }
+}
+// Crea una lista de comida y utiliza un array literal para agregar varios platos a la lista.
+comida=["zanahoria","platano","pollo"];
+// Agrega un elemento al principio de la lista de comida que creaste en el ejercicio anterior.
+comida.unshift("manzana");
+// Accede al segundo elemento de la lista de comida y cambia su valor por un plato diferente.
+comida[1]="hamburguesa";
+// Recorre la lista de comida utilizando un bucle while y muestra cada elemento en la consola.
+var k=0;
+while (k<comida.length) {
+    console.log(comida[k]);
+    k=k+1;
+}
+// Crea una función que reciba una lista como parámetro y devuelva el último elemento de la lista.
+function ultimoelemento(lista) {
+    console.log(lista[lista.length-1]);
+}
+// Crea una función que reciba una lista y un elemento como parámetros y
+//agregue el elemento a la lista si no se encuentra en ella.
+function agregar(lista, elemento) {
+    lista.push(elemento);
+}
+// Crea una función que reciba una lista como parámetro y
+//devuelva una nueva lista con los elementos de la lista original en orden inverso.
+function invertir(lista) {
+    lista.reverse();
+}
+// Crea una función que reciba una lista de números como parámetro y
+//devuelva la suma de todos los números de la lista.
+function sumar(lista) {
+    var m=0;
+    for (let l=0; l<lista.length; l++) {
+        m=m+lista[l];
+    }
+    console.log(m);
+}
+// Crea una función que reciba una lista de números como parámetro y
+//devuelva la media de todos los números de la lista.
+function media(lista) {
+    var o=0;
+    for (let n=0; n<lista.length; n++) {
+        o=o+lista[n];
+    }
+    console.log(o/lista.length);
+}
+//Crea una función que reciba una lista de numeros y un numero y nos tiene que devolver si aparece el elemento en la lista o no//
+function devolver(lista,numero) {
 
-    // Crea una lista de números impares del 1 al 19 utilizando un bucle for.
-    var impares=[];
-for (i=1; i<=19; i++){
-if (i % 2==1){
-    impares.push(i);
+
+
+
 }
-}
-console.log("Lista de numeros"+numeros)
-    // Crea una lista de comida.
-    var comida = ["pasta", "hamburguesa","durum"]
-    
-    // Agrega un elemento al principio de la lista de comida que creaste en el ejercicio anterior.
-    
-    // Accede al segundo elemento de la lista de comida y cambia su valor por otro diferente.
-    
-    // Recorre la lista de comida utilizando un bucle while y muestra cada elemento en la consola.
-    
-    // Crea una función que reciba una lista como parámetro y devuelva el último elemento de la lista.
-    
-    // Crea una función que reciba una lista y un elemento como parámetros y agregue el elemento a la lista si no se encuentra en ella.
-    
-    // Crea una función que reciba una lista como parámetro y devuelva una nueva lista con los elementos de la lista original en orden inverso.
-    
-    // Crea una función que reciba una lista de números como parámetro y devuelva la suma de todos los números de la lista.
-    
-    // Crea una función que reciba una lista de números como parámetro y devuelva la media de todos los números de la lista.
